@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Javascript</title>
+</head>
+<body>
+    <h1>Fundamentos JavaScript</h1>
+    <script>
+        var hola = "Hola mundo";
+        console.log(hola);
+        let hello = "Hello World";
+        //ambito de bloque
+        console.log(hello);
+        console.log(window);
+        console.log("******var*****");
+        var musica = "Rock";
+        console.log("Variable Música antes del bloque",musica);
+        //Esto es un bloque
+        {
+            var musica = "pop"
+            console.log("Variable Música dentro del bloque",musica);
+            {
+                console.log("Variable Música dentro 2 del bloque",musica);
+            }
+        }
+        console.log("Variable Música despues del bloque",musica);
+        console.log("******let*****");
+        let musica2 = "Rock";
+        console.log("Variable Música antes del bloque",musica2);
+        //Esto es un bloque
+        {
+
+            let musica2 = "pop"
+            console.log("Variable Música dentro del bloque",musica2);
+            {
+                console.log("Variable Música dentro 2 del bloque",musica2);
+            }
+        }
+        console.log("Variable Música despues del bloque",musica2);
+        
+        //uso de contantes
+        let a;
+
+        const PI = 3.1416;
+        console.log(PI);
+        
+        a = "kenay";
+        console.log(a);
+        //objeto
+        let objeto = {
+            nombre: "json",
+            edad: 35
+        }
+        //array
+        let colores = ["blanco","negro","rojo"]
+
+        console.log(objeto);
+        console.log(colores);
+
+        objeto.correo ="hubertperez@outloo.com";
+        colores.push("anaranjado");
+        
+        console.log(objeto);
+        console.log(colores);
+
+    </script>
+</body>
+</html>
